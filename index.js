@@ -64,6 +64,10 @@ var renderer = function(data, options, callback) {
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(
           isDevMode ? 'development' : 'production')
+      }),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
       })
     ]
   });
