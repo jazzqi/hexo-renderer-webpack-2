@@ -87,9 +87,9 @@ var renderer = function(data, options, callback) {
 
     // Fix problems with HTML beautification
     // see: https://github.com/hexojs/hexo/issues/1663
-    contents = contents
-      .replace(/</g, ' < ')
-      .replace(/< </g, ' << ');
+    // contents = contents
+    //   .replace(/</g, ' < ')
+    //   .replace(/< </g, ' << ');
 
     return callback(null, contents);
   });
